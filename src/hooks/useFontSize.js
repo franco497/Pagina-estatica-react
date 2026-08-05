@@ -41,20 +41,18 @@ export const useFontSize = () => {
     if (fontSize === "large") storageValue = "font-large";
     if (fontSize === "xlarge") storageValue = "font-xlarge";
     localStorage.setItem("fontSize", storageValue);
-    console.log("💾 Guardado en localStorage:", storageValue);
   }, [fontSize]);
 
-  // 👈 CORREGIDO: Sincronizar con localStorage en CADA RENDERIZADO
+  // Sincronizar con localStorage en CADA RENDERIZADO
   // Esto asegura que si localStorage cambia externamente, se actualice
   useEffect(() => {
     const currentSavedSize = getSavedFontSize();
     
     // Solo actualizar si es diferente y no estamos en medio de un cambio
     if (currentSavedSize !== fontSize) {
-      console.log("🔄 Sincronizando desde localStorage:", currentSavedSize, "→ actual:", fontSize);
       setFontSize(currentSavedSize);
     }
-  }); // 👈 SIN dependencias - se ejecuta en cada renderizado
+  }); // sin dependencias - se ejecuta en cada renderizado
 
   // Intentar aplicar el estilo repetidamente
   useEffect(() => {
@@ -84,7 +82,6 @@ export const useFontSize = () => {
   }, [fontSize]);
 
   const changeFontSize = (size) => {
-    console.log("🖱️ Cambiando fontSize a:", size);
     setFontSize(size);
   };
 

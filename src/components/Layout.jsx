@@ -14,10 +14,7 @@ const Layout = ({ children }) => {
   const applyFontSize = () => {
     const mainContent = document.querySelector(".main-content");
     
-    if (!mainContent) {
-      console.log("main-content no encontrado");
-      return;
-    }
+    if (!mainContent) return;
     
     // Remover clases existentes
     mainContent.classList.remove("font-large", "font-xlarge");
@@ -25,18 +22,12 @@ const Layout = ({ children }) => {
     // Verificar si es tablet
     const isTablet = window.innerWidth >= 541 && window.innerWidth <= 900;
     
-    console.log("Aplicando tamaño:", { fontSize, isTablet, path: location.pathname });
-    
     // Aplicar la clase correspondiente solo si es tablet
     if (isTablet) {
       if (fontSize === "large") {
         mainContent.classList.add("font-large");
-        console.log("Clase font-large agregada");
       } else if (fontSize === "xlarge") {
         mainContent.classList.add("font-xlarge");
-        console.log("Clase font-xlarge agregada");
-      } else {
-        console.log("Tamaño medium, sin clase adicional");
       }
     }
   };

@@ -17,11 +17,6 @@ const FontControls = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // 👈 NUEVO: Debug para ver el estado actual
-  useEffect(() => {
-    console.log("FontControls - fontSize actual:", fontSize);
-  }, [fontSize]);
-
   // Solo mostrar en tablet
   if (!isTabletState) return null;
 
