@@ -68,7 +68,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Repositorio
+                Repositorio 22
               </a>
             </div>
           </div>
