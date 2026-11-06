@@ -8,12 +8,26 @@ Sitio web informativo desarrollado con **React + Vite** que ofrece contenido org
 
 ## ✨ Características principales
 
-* 🖥️ **Desktop First** – Estrategia de diseño que prioriza la experiencia en escritorio y se adapta de forma responsive a tablets y dispositivos móviles.
-* 🧭 **Doble sistema de navegación** – Menú principal fijo combinado con un menú lateral dinámico que cambia según el contenido de cada sección.
-* 📚 **Aside colapsable** – Optimizado para tablets, permitiendo ampliar el espacio de lectura sin perder accesibilidad al índice.
-* 🔠 **Control de tamaño de fuente** – Opciones de tamaño estándar, grande y muy grande con persistencia mediante `localStorage`.
-* 📱 **Diseño responsive** – Interfaz adaptada a móviles, tablets y escritorio.
-* ⚡ **Enrutamiento completo** – Navegación fluida mediante React Router DOM.
+- 🖥️ **Desktop First** – Estrategia de diseño que prioriza la experiencia en escritorio y se adapta de forma responsive a tablets y dispositivos móviles.
+- 🧭 **Doble sistema de navegación** – Menú principal fijo combinado con un menú lateral dinámico que cambia según el contenido de cada sección.
+- 📚 **Aside colapsable** – Optimizado para tablets, permitiendo ampliar el espacio de lectura sin perder accesibilidad al índice.
+- 🔠 **Control de tamaño de fuente** – Opciones de tamaño estándar, grande y muy grande con persistencia mediante `localStorage`.
+- 📱 **Diseño responsive** – Interfaz adaptada a móviles, tablets y escritorio.
+- ⚡ **Enrutamiento completo** – Navegación fluida mediante React Router DOM.
+
+---
+
+## 📸 Capturas de pantalla
+
+### 🖥️ Vista Desktop
+
+![Vista desktop del sitio](./screenshots/01-desktop.png)
+
+### 📱 Vista Tablet
+
+![Vista tablet (1)](./screenshots/02-tablet-1.png)
+
+![Vista tablet (2)](./screenshots/03-tablet-2.png)
 
 ---
 
